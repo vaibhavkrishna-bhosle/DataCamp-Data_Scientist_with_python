@@ -14,6 +14,8 @@ Instructions
 -The string title is also coded for you. Use it to add a title to the plot.
 -After these customizations, finish the script with plt.show() to actually display the plot.
 '''
+import matplotlib.pyplot as plt
+
 # Basic scatter plot, log scale
 plt.scatter(gdp_cap, life_exp)
 plt.xscale('log') 

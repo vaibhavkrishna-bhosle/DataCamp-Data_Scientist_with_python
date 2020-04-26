@@ -20,6 +20,9 @@ Print out the shape attribute of np_baseball.
 
 # Import numpy package
 import numpy as np
+import pandas as pd
+
+baseball = pd.read_csv('/Users/vaibhav/Desktop/Python Projects/DataCamp-Data Scientist with python/01-intro-to-python-for-data-science/_datasets/baseball.csv')
 
 # Create a 2D numpy array from baseball: np_baseball
 np_baseball = np.array(baseball)

@@ -20,10 +20,15 @@ Save the resulting numpy array as bmi.
 
 # Import numpy
 import numpy as np
+import pandas as pd
+
+data = pd.read_csv('/Users/vaibhav/Desktop/Python Projects/DataCamp-Data Scientist with python/01-intro-to-python-for-data-science/_datasets/data.csv')
+height_in = data['height_in']
+weight_lb = data['weight_lb']
 
 # Calculate the BMI: bmi
-np_height_m = np.array(height) * 0.0254
-np_weight_kg = np.array(weight) * 0.453592
+np_height_m = np.array(height_in) * 0.0254
+np_weight_kg = np.array(weight_lb) * 0.453592
 bmi = np_weight_kg / np_height_m ** 2
 
 # Create the light array

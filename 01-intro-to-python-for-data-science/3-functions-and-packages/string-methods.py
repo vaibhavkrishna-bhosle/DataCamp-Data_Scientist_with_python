@@ -13,14 +13,14 @@ Instructions
 letter "o" as an input to the method. We're talking about the variable room, not the word "room"!
 '''
 # string to experiment with: room
-room = "poolhouse"
+place = "poolhouse"
 
-# Use upper() on room: room_up
-room_up = room.upper()
+# Use upper() on place: place_up
+place_up = place.upper()
 
-# Print out room and room_up
-print(room)
-print(room_up)
+# Print out place and place_up
+print(place)
+print(place_up)
 
-# Print out the number of o's in room
-print(room.count('o'))
+# Print out the number of o's in place
+print(place.count('o'))

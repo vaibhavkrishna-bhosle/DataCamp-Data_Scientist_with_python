@@ -15,11 +15,11 @@ Print out the value of result.
 savings = 100
 
 # Create a variable factor
-factor = 1.10
+growth_multiplier = 1.10
 
 # Calculate result
 years = 7
-result = (savings * factor ** years)
+result = (savings * growth_multiplier ** years)
 
 # Print out result
 print(result)

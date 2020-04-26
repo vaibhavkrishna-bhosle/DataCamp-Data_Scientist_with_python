@@ -14,6 +14,7 @@ on the vertical axis.
 -Finish the script with plt.show() to actually display the plot. Do you see a correlation?
 '''
 # Import package
+
 import matplotlib.pyplot as plt
 
 # Build Scatter plot

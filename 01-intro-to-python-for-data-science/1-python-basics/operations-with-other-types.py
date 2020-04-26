@@ -15,11 +15,11 @@ Print out doubledesc. Did you expect this?
 '''
 # Several variables to experiment with
 savings = 100
-factor = 1.1
+growth_multiplier = 1.1
 desc = "compound interest"
 
 # Assign product of factor and savings to year1
-year1 = (savings * factor)
+year1 = (savings * growth_multiplier)
 
 # Print the type of year1
 print(type(year1))

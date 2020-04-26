@@ -23,13 +23,17 @@ index 110
 
 # Import numpy
 import numpy as np
+import pandas as pd
 
+data = pd.read_csv('/Users/vaibhav/Desktop/Python Projects/DataCamp-Data Scientist with python/01-intro-to-python-for-data-science/_datasets/data.csv')
+height_in = data['height_in']
+weight_lb = data['weight_lb']
 # Store weight and height lists as numpy arrays
-np_weight = np.array(weight)
-np_height = np.array(height)
+np_weight_lb = np.array(weight_lb)
+np_height_in = np.array(height_in)
 
 # Print out the weight at index 50
-print(weight[50])
+print(weight_lb[50])
 
 # Print out sub-array of np_height: index 100 up to and including index 110
-print(np_height[100:111])
+print(np_height_in[100:111])

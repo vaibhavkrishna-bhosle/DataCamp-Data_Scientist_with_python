@@ -34,6 +34,9 @@ Instructions
 
 # Import numpy package
 import numpy as np
+import pandas as pd
+
+baseball = pd.read_csv('/Users/vaibhav/Desktop/Python Projects/DataCamp-Data Scientist with python/01-intro-to-python-for-data-science/_datasets/baseball.csv')
 
 # Create np_baseball (2 cols)
 np_baseball = np.array(baseball)
@@ -42,7 +45,7 @@ np_baseball = np.array(baseball)
 print(np_baseball[49,:])
 
 # Select the entire second column of np_baseball: np_weight
-np_weight = np_baseball[:,1]
+np_weight_lb = np_baseball[:,1]
 
 # Print out height of 124th player
 print(np_baseball[123,0])
