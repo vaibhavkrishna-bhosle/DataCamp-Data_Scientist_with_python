@@ -1,0 +1,18 @@
+'''Adding error-bars to a plot is done by using the errorbars method of the Axes object.
+
+Here, you have two DataFrames loaded: seattle_weather has data about the weather in Seattle and austin_weather has data about the weather in Austin. Each DataFrame has a column "MONTH" that has the names of the months, a column "MLY-TAVG-NORMAL" that has the average temperature in each month and a column "MLY-TAVG-STDDEV" that has the standard deviation of the temperatures across years.
+
+In the exercise, you will plot the mean temperature across months and add the standard deviation at each point as y errorbars.'''
+
+fig, ax = plt.subplots()
+
+# Add the Seattle temperature data in each month with standard deviation error bars
+ax.errorbar(seattle_weather["MONTH"], seattle_weather["MLY-TAVG-NORMAL"], yerr=seattle_weather["MLY-TAVG-STDDEV"])
+
+# Add the Austin temperature data in each month with standard deviation error bars
+ax.errorbar(austin_weather["MONTH"], austin_weather["MLY-TAVG-NORMAL"], yerr=austin_weather["MLY-TAVG-STDDEV"])
+
+# Set the y-axis label
+ax.set_ylabel("Temperature (Fahrenheit)")
+
+plt.show()
