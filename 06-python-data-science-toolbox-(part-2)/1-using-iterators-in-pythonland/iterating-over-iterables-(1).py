@@ -20,15 +20,14 @@ Use person as the loop variable.
 flash = ['jay garrick', 'barry allen', 'wally west', 'bart allen']
 
 # Print each list item in flash using a for loop
-for name in flash:
-    print(name)
+for person in flash:
+    print(person)
 
-
-# Create an iterator for flash: superspeed
-superspeed = iter(flash)
+# Create an iterator for flash: superhero
+superhero = iter(flash)
 
 # Print each item from the iterator
-print(next(superspeed))
-print(next(superspeed))
-print(next(superspeed))
-print(next(superspeed))
+print(next(superhero))
+print(next(superhero))
+print(next(superhero))
+print(next(superhero))
